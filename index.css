@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 200px;
+}
+#part-one{
+    width:450px;
+    height: 730px;
+    background: radial-gradient(ellipse,#e1e1e1, #6d6d6d, #020202);
+}
+#carte-one,#carte-two{
+    width: 480px;
+    height: 300px;
+    border-radius: 10px;
+    position: relative;
+}
+#carte-one{
+    top: 40px;
+    left: 130px;
+    background-image: url("./allImag/cih.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#carte-two{
+    top: 100px;
+    left: 240px;
+    background-color: rgb(221, 221, 221);
+}
+#international{
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+}
+#lign-black{
+    background-color: black;
+    width: 480px;
+    height: 50px;
+}
+#lign-gris{
+    background-color: rgb(182, 182, 182);
+    width: 330px;
+    height: 40px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 20px auto ;
+    padding-right: 20px;
+    color: #ffffff;
+    letter-spacing: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+#text-one,#text-two,#text-three{
+    color: rgb(135, 115, 0);
+    font-weight: bold;
+    position: relative;
+}
+#text-one{
+    top: 175px;
+    left: 35px;
+    letter-spacing: 7px;
+}
+#text-two{
+    top: 209px;
+    left: 35px;
+    letter-spacing: 4px;
+}
+#text-three{
+    top: 170px;
+    left: 250px;
+    letter-spacing: 4px;
+}
+#text{
+    text-align: center;
+    font-size: 12px ;
+}
+#text span{
+    font-weight: bold;
+}
+#cih-logo{
+    width: 90px;
+    display: block;
+    margin: auto;
+}
+#part-two{
+    margin: auto;
+}
+#flex{
+    display: flex;
+    gap: 30px;
+}
+#bloc{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+input{
+    margin: 5px 0;
+    padding: 10px 8px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+#btnConfirm button{
+    padding: 10px 148px;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    border: none;
+    background-color: #6d6d6d;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+}
+#btnConfirm{
+    text-decoration: none;
+}
+#btnConfirm button:hover{
+    background-color: #1d1d1d;
+}
