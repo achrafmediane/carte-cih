@@ -4,31 +4,30 @@
 }
 body{
     overflow: hidden;
+    background-image: url('./allImag/cih\ bank\ siége.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#container{
     display: flex;
     align-items: center;
-    gap: 200px;
-}
-#part-one{
-    width:450px;
-    height: 730px;
-    background: radial-gradient(ellipse,#e1e1e1, #6d6d6d, #020202);
+    justify-content: space-evenly;
 }
 #carte-one,#carte-two{
     width: 480px;
     height: 300px;
     border-radius: 10px;
-    position: relative;
+   position: relative;
 }
 #carte-one{
     top: 40px;
-    left: 130px;
     background-image: url("./allImag/cih.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 #carte-two{
     top: 100px;
-    left: 240px;
+    left: 100px;
     background-color: rgb(221, 221, 221);
 }
 #international{
@@ -88,7 +87,9 @@ body{
     margin: auto;
 }
 #part-two{
-    margin: auto;
+    background-color: #3f3f3f94;
+    padding: 50px;
+    border-radius: 20px;
 }
 #flex{
     display: flex;
@@ -98,6 +99,9 @@ body{
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
+}
+label{
+    color: #ffffff;
 }
 input{
     margin: 5px 0;
@@ -111,7 +115,7 @@ input{
     margin: auto;
     border-radius: 5px;
     border: none;
-    background-color: #6d6d6d;
+    background-color: #040404;
     color: #ffffff;
     font-size: 20px;
     font-weight: bold;
@@ -120,5 +124,46 @@ input{
     text-decoration: none;
 }
 #btnConfirm button:hover{
-    background-color: #1d1d1d;
+    background-color: #2d2d2d;
+}
+@media  (max-width:1020px){
+    body{
+        overflow-y: auto;
+        margin: 40px 0;
+    }
+    #container{
+        flex-direction: column;
+        gap: 40px;
+    }
+    #part-one{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    #carte-two,#carte-one{
+        position: static;
+        left: auto;
+        top: auto;
+    }
+    
+}
+@media (min-width:1021px) and (max-width:1300px){
+    body{
+        overflow-y: auto;
+        margin: 40px 0;
+    }
+    #container{
+        flex-direction: column;
+        gap: 40px;
+    }
+    #part-one{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+    #carte-two,#carte-one{
+        position: static;
+        left: auto;
+        top: auto;
+    }
 }
