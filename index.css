@@ -188,6 +188,7 @@ input{
     #cih-logo{
         position: relative;
         bottom: 20px;
+        width: 80px;
     }
     #part-two{
         padding: 10px;
