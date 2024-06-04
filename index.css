@@ -14,7 +14,7 @@ body{
 }
 #carte-one,#carte-two{
     width: 480px;
-    height: 300px;
+    height: 293px;
     border-radius: 10px;
     box-shadow: 10px 10px 20px;
    position: relative;
@@ -63,9 +63,10 @@ body{
     top: 175px;
     left: 35px;
     letter-spacing: 7px;
+    font-size: 27px;
 }
 #text-two{
-    top: 209px;
+    top: 211px;
     left: 35px;
     letter-spacing: 4px;
 }
@@ -90,11 +91,11 @@ body{
     background-color: #3f3f3f94;
     padding: 50px;
     border-radius: 20px;
-    box-shadow: 10px 10px 20px;
+     box-shadow: 10px 10px 20px;
 }
 #flex{
     display: flex;
-    gap: 30px;
+    gap:30px;
 }
 #bloc{
     display: flex;
@@ -127,7 +128,153 @@ input{
 #btnConfirm button:hover{
     background-color: #2d2d2d;
 }
-@media  (max-width:1020px){
+@media (max-width:450px){
+    body{
+        overflow-y: auto;
+        margin: 40px 0;
+    }
+    #container{
+        flex-direction: column;
+        gap: 40px;
+    }
+    #part-one{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    #carte-two,#carte-one{
+        position: static;
+        left: auto;
+        top: auto;
+        width: 300px;
+        height: 183px;
+    }
+    #carte-one{
+        background-image: url("./allImag/cih.jpeg");
+    }
+    #text-one{
+        top: 110px;
+        left: 35px;
+        letter-spacing: 4px;
+        font-size: 18px;
+    }
+    #text-two{
+        top: 128px;
+        left: 35px;
+        letter-spacing: 2px;
+        font-size: 13px;
+    }
+    #text-three{
+        top: 95px;
+        left: 190px;
+        letter-spacing: 2px;
+    }
+    #lign-black{
+        width: 301px;
+        height: 10px;
+    }
+    #lign-gris{
+        width: 180px;
+        height: 16px;
+        margin: 10px auto;
+    }
+    #international{
+        font-size: 10px;
+    }
+    #text{
+        text-align: center;
+        font-size: 10px ;
+    }
+    #cih-logo{
+        position: relative;
+        bottom: 15px;
+    }
+    #part-two{
+        padding: 10px;
+    }
+    label{
+        font-size: 12px;
+    }
+    .smallInput input{
+        width: 30px;
+    }
+    .inputOne,.inputTwo{
+        width: 270px;
+    }
+    .lastInput{
+        width: 120px;
+    }
+    #btnConfirm button{
+        padding: 10px 100px;
+        display: block;
+        margin: auto;
+        border-radius: 5px;
+        border: none;
+        background-color: #040404;
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+@media (min-width:450px) and (max-width:500px){
+    body{
+        overflow-y: auto;
+        margin: 40px 0;
+    }
+    #container{
+        flex-direction: column;
+        gap: 40px;
+    }
+    #part-one{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    #carte-two,#carte-one{
+        position: static;
+        left: auto;
+        top: auto;
+        width: 400px;
+        height: 244px;
+    }
+    #carte-one{
+        background-image: url("./allImag/cih.jpeg");
+    }
+    #text-one{
+        top: 140px;
+        left: 35px;
+        letter-spacing: 5px;
+    }
+    #text-two{
+        top: 170px;
+        left: 35px;
+        letter-spacing: 2px;
+    }
+    #text-three{
+        top: 130px;
+        left: 220px;
+        letter-spacing: 2px;
+    }
+    #lign-black{
+        width: 401px;
+        height: 20px;
+    }
+    #lign-gris{
+        width: 260px;
+        height: 20px;
+    }
+    #international{
+        font-size: 14px;
+    }
+    #cih-logo{
+        position: relative;
+        bottom: 10px;
+    }
+    #part-two{
+        padding: 20px;
+    }
+}
+@media (min-width:501px) and (max-width:1020px){
     body{
         overflow-y: auto;
         margin: 40px 0;
