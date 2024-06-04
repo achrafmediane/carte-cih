@@ -64,11 +64,6 @@ body{
     left: 35px;
     letter-spacing: 7px;
     font-size: 27px;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
 #text-two{
     top: 211px;
@@ -162,11 +157,6 @@ input{
         left: 35px;
         letter-spacing: 4px;
         font-size: 18px;
-        -webkit-touch-callout: none;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
     }
     #text-two{
         top: 128px;
