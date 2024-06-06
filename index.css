@@ -146,8 +146,8 @@ input{
         position: static;
         left: auto;
         top: auto;
-        width: 310px;
-        height: 190px;
+        width: 330px;
+        height: 200px;
     }
     #carte-one{
         background-image: url("./allImag/cih.jpeg");
@@ -206,7 +206,7 @@ input{
         width: 120px;
     }
     #btnConfirm button{
-        padding: 10px 100px;
+        padding: 10px 120px;
         display: block;
         margin: auto;
         border-radius: 5px;
