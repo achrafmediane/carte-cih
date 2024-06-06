@@ -29,6 +29,7 @@ body{
     top: 100px;
     left: 100px;
     background-color: rgb(221, 221, 221);
+    padding: 10px 0;
 }
 #international{
     text-align: center;
