@@ -17,23 +17,22 @@ body{
     height: 293px;
     border-radius: 10px;
     box-shadow: 10px 10px 20px;
-   position: relative;
 }
 #carte-one{
-    top: 40px;
+    margin-top: 40px;
     background-image: url("./allImag/cih.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 #carte-two{
-    top: 100px;
-    left: 100px;
+    margin-top: 60px;
+    margin-left: 100px;
     background-color: rgb(221, 221, 221);
 }
 #international{
     text-align: center;
     font-weight: bold;
-    padding: 5px;
+    padding: 5px 0;
 }
 #lign-black{
     background-color: black;
@@ -57,7 +56,7 @@ body{
 #text-one,#text-two,#text-three{
     color: rgb(135, 115, 0);
     font-weight: bold;
-    position: relative;
+    
 }
 #text-one{
     top: 175px;
@@ -143,14 +142,15 @@ input{
         gap: 40px;
     }
     #carte-two,#carte-one{
-        position: static;
-        left: auto;
-        top: auto;
         width: 300px;
         height: 183px;
     }
     #carte-one{
-        background-image: url("./allImag/cih.jpeg");
+        margin-top: 0;
+    }
+    #carte-two{
+        margin-top: 5px;
+        margin-left: 0;
     }
     #text-one{
         top: 110px;
@@ -232,14 +232,15 @@ input{
         gap: 40px;
     }
     #carte-two,#carte-one{
-        position: static;
-        left: auto;
-        top: auto;
         width: 400px;
         height: 244px;
     }
     #carte-one{
-        background-image: url("./allImag/cih.jpeg");
+        margin-top: 0;
+    }
+    #carte-two{
+        margin-top: 5px;
+        margin-left: 0;
     }
     #text-one{
         top: 140px;
@@ -274,8 +275,9 @@ input{
     #part-two{
         padding: 20px;
     }
+    
 }
-@media (min-width:501px) and (max-width:1020px){
+@media (min-width:501px) and (max-width:1150px){
     body{
         overflow-y: auto;
         margin: 40px 0;
@@ -289,14 +291,17 @@ input{
         flex-direction: column;
         gap: 40px;
     }
-    #carte-two,#carte-one{
-        position: static;
-        left: auto;
-        top: auto;
+    #carte-one{
+        margin-top: 0;
     }
-    
+    #carte-two{
+        margin-top: 5px;
+        margin-left: 0;
+        background-color: rgb(221, 221, 221);
+    }
+   
 }
-@media (min-width:1021px) and (max-width:1300px){
+@media (min-width:1150px) and (max-width:1300px){
     body{
         overflow-y: auto;
         margin: 40px 0;
@@ -309,10 +314,5 @@ input{
         display: flex;
         justify-content: space-evenly;
         gap: 20px;
-    }
-    #carte-two,#carte-one{
-        position: static;
-        left: auto;
-        top: auto;
     }
 }
