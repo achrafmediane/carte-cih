@@ -5,61 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./index.css" />
-    <link rel="icon" href="./allImag/cih-logo.png">
+    <link rel="icon" href="./allImag/cih-logo.png" />
   </head>
   <body>
     <div id="container">
-    <div id="part-one">
-      <div id="carte-one">
-        <h2 id="text-one">0000 0000 0000 0000</h2>
-        <p id="text-three">00/00</p>
-        <p id="text-two">MR MEDIANE ACHRAF</p>
-        
+      <div id="part-one">
+        <div id="carte-one">
+          <h2 id="text-one">0000 0000 0000 0000</h2>
+          <p id="text-three">00/00</p>
+          <p id="text-two">MR MEDIANE ACHRAF</p>
+        </div>
+        <div id="carte-two">
+          <p id="international">Carte International</p>
+          <div id="lign-black"></div>
+          <div id="lign-gris"><p>000</p></div>
+          <p id="text">
+            <span>Important:</span> Cette carte est strictement personnelle,
+            propriété de la banque émettrice <br />
+            qui peut la retirer à tout moment. <br />
+            En cas de perte ou de vol, aviser d'urgence votre agence CIH. <br />
+            Tout emploi frauduleux entrainera de graves conséquences pénales.
+            <br />
+            Toute personne trouvant cette carte est priée de bien vouloir
+            l'adresser <br />
+            ou la remettre à l'une des agences de la banque.
+          </p>
+          <img id="cih-logo" src="./allImag/cih-logo.png" alt="" />
+        </div>
       </div>
-      <div id="carte-two">
-        <p id="international">Carte International</p>
-        <div id="lign-black"></div>
-        <div id="lign-gris"><p>000</p></div>
-        <p id="text">
-          <span>Important:</span> Cette carte est strictement personnelle,
-          propriété de la banque émettrice <br />
-          qui peut la retirer à tout moment. <br />
-          En cas de perte ou de vol, aviser d'urgence votre agence CIH. <br />
-          Tout emploi frauduleux entrainera de graves conséquences pénales.
-          <br />
-          Toute personne trouvant cette carte est priée de bien vouloir
-          l'adresser <br />
-          ou la remettre à l'une des agences de la banque.
-        </p>
-        <img id="cih-logo" src="./allImag/cih-logo.png" alt="" />
+      <div id="part-two">
+        <form action="">
+          <div id="bloc">
+            <label for="">CARDHOLDER NAME</label>
+            <input
+              class="inputOne"
+              type="text"
+              placeholder="e.g. Jane Appleseed"
+            />
+          </div>
+          <div id="bloc">
+            <label for="">CARD NUMBER</label>
+            <input
+              class="inputTwo"
+              type="number"
+              placeholder="e.g. 1234 5678 9123 0000"
+            />
+          </div>
+          <div id="flex">
+            <div class="smallInput" id="bloc">
+              <label for="">CARDHOLDER NAME</label>
+              <div class="flex">
+                <input type="number" placeholder="MM" min="01" max="12" />
+                <input type="number" placeholder="YY" min="10" max="40" />
+              </div>
+            </div>
+            <div id="bloc">
+              <label for="">CVC</label>
+              <input class="lastInput" type="number" placeholder="e.g. 123" />
+            </div>
+          </div>
+          <a href="" id="btnConfirm"><button>Confirm</button></a>
+        </form>
       </div>
     </div>
-    <div id="part-two">
-      <form action="">
-        <div id="bloc">
-          <label for="">CARDHOLDER NAME</label>
-          <input class="inputOne" type="text" placeholder="e.g. Jane Appleseed" />
-        </div>
-        <div id="bloc">
-          <label for="">CARD NUMBER</label>
-          <input class="inputTwo" type="number" placeholder="e.g. 1234 5678 9123 0000" />
-        </div>
-        <div id="flex">
-        <div class="smallInput" id="bloc">
-          <label for="">CARDHOLDER NAME</label>
-          <div class="flex">
-          <input type="number" placeholder="MM" min="01" max="12"/>
-          <input type="number" placeholder="YY" min="10" max="40">
-        </div>
-        </div>
-        <div id="bloc">
-            <label for="">CVC</label>
-            <input class="lastInput" type="number" placeholder="e.g. 123">
-        </div>
-    </div>
-    <a href="" id="btnConfirm"><button>Confirm</button></a>
-      </form>
-    </div>
-  </div>
   </body>
 </html>

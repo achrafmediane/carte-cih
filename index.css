@@ -1,115 +1,213 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
-body{
-    background: linear-gradient(#2d2d2d,#ffffff);
-    background-repeat: no-repeat;
+body {
+  background: linear-gradient(#2d2d2d, #ffffff);
+  background-repeat: no-repeat;
 }
-#container{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
-#carte-one,#carte-two{
-    width: 480px;
-    height: 293px;
-    border-radius: 10px;
-    box-shadow: 10px 10px 20px;
+#carte-one,
+#carte-two {
+  width: 480px;
+  height: 293px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px;
 }
-#carte-one{
-    margin-top: 40px;
-    background-image: url("./allImag/cih.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
+#carte-one {
+  margin-top: 40px;
+  background-image: url("./allImag/cih.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-#carte-two{
-    margin-top: 60px;
-    margin-left: 100px;
-    background-color: rgb(221, 221, 221);
+#carte-two {
+  margin-top: 60px;
+  margin-left: 100px;
+  background-color: rgb(221, 221, 221);
 }
-#international{
-    text-align: center;
-    font-weight: bold;
-    padding: 5px 0;
+#international {
+  text-align: center;
+  font-weight: bold;
+  padding: 5px 0;
 }
-#lign-black{
-    background-color: black;
-    width: 480px;
-    height: 50px;
+#lign-black {
+  background-color: black;
+  width: 480px;
+  height: 50px;
 }
-#lign-gris{
-    background-color: rgb(182, 182, 182);
-    width: 330px;
-    height: 40px;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    margin: 20px auto ;
-    padding-right: 20px;
-    color: #ffffff;
-    letter-spacing: 3px;
-    font-weight: bold;
-    border-radius: 5px;
+#lign-gris {
+  background-color: rgb(182, 182, 182);
+  width: 330px;
+  height: 40px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin: 20px auto;
+  padding-right: 20px;
+  color: #ffffff;
+  letter-spacing: 3px;
+  font-weight: bold;
+  border-radius: 5px;
 }
-#text-one,#text-two,#text-three{
-    color: rgb(135, 115, 0);
-    font-weight: bold;    
+#text-one,
+#text-two,
+#text-three {
+  color: rgb(135, 115, 0);
+  font-weight: bold;
 }
-#text-one{
-    padding-top: 170px;
-    padding-left: 35px;
-    letter-spacing: 7px;
-    font-size: 27px;
+#text-one {
+  padding-top: 170px;
+  padding-left: 35px;
+  letter-spacing: 7px;
+  font-size: 27px;
 }
-#text-two{
-    padding-top: 10px;
-    padding-left: 35px;
-    letter-spacing: 4px;
+#text-two {
+  padding-top: 10px;
+  padding-left: 35px;
+  letter-spacing: 4px;
 }
-#text-three{
-    padding-top:  10px;
-    padding-left: 245px;
-    letter-spacing: 4px;
+#text-three {
+  padding-top: 10px;
+  padding-left: 245px;
+  letter-spacing: 4px;
 }
-#text{
-    text-align: center;
-    font-size: 12px ;
+#text {
+  text-align: center;
+  font-size: 12px;
 }
-#text span{
-    font-weight: bold;
+#text span {
+  font-weight: bold;
 }
-#cih-logo{
-    width: 90px;
-    display: block;
-    margin: auto;
+#cih-logo {
+  width: 90px;
+  display: block;
+  margin: auto;
 }
-#part-two{
-    background-color: #3f3f3f94;
-    padding: 50px;
-    border-radius: 10px;
-     box-shadow: 10px 10px 20px;
+#part-two {
+  background-color: #3f3f3f94;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px;
 }
-#flex{
-    display: flex;
-    gap:30px;
+#flex {
+  display: flex;
+  gap: 30px;
 }
-#bloc{
+#bloc {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+label {
+  color: #ffffff;
+}
+input {
+  margin: 5px 0;
+  padding: 10px 8px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+#btnConfirm button {
+  padding: 10px 148px;
+  display: block;
+  margin: auto;
+  border-radius: 5px;
+  border: none;
+  background-color: #040404;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+}
+#btnConfirm {
+  text-decoration: none;
+}
+#btnConfirm button:hover {
+  background-color: #2d2d2d;
+}
+@media (max-width: 450px) {
+  body {
+    margin: 40px 0;
+  }
+  #container {
+    flex-direction: column;
+    gap: 40px;
+  }
+  #part-one {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
-}
-label{
-    color: #ffffff;
-}
-input{
-    margin: 5px 0;
-    padding: 10px 8px;
-    border-radius: 5px;
-    border: 1px solid gray;
-}
-#btnConfirm button{
-    padding: 10px 148px;
+    gap: 40px;
+  }
+  #carte-two,
+  #carte-one {
+    width: 300px;
+    height: 183px;
+  }
+  #carte-one {
+    margin-top: 0;
+  }
+  #carte-two {
+    margin-top: 5px;
+    margin-left: 0;
+  }
+  #text-one {
+    padding-top: 107px;
+    padding-left: 22px;
+    letter-spacing: 4px;
+    font-size: 18px;
+  }
+  #text-two {
+    padding-top: 4px;
+    padding-left: 22px;
+    letter-spacing: 2px;
+    font-size: 13px;
+  }
+  #text-three {
+    padding-top: 0;
+    padding-left: 170px;
+    letter-spacing: 2px;
+  }
+  #lign-black {
+    width: 301px;
+    height: 10px;
+  }
+  #lign-gris {
+    width: 180px;
+    height: 16px;
+    margin: 10px auto;
+  }
+  #international {
+    font-size: 10px;
+  }
+  #text {
+    text-align: center;
+    font-size: 10px;
+  }
+  #cih-logo {
+    width: 60px;
+    height: 40px;
+  }
+  #part-two {
+    padding: 10px;
+  }
+  label {
+    font-size: 12px;
+  }
+  .smallInput input {
+    width: 30px;
+  }
+  .inputOne,
+  .inputTwo {
+    width: 270px;
+  }
+  .lastInput {
+    width: 120px;
+  }
+  #btnConfirm button {
+    padding: 10px 100px;
     display: block;
     margin: auto;
     border-radius: 5px;
@@ -118,193 +216,99 @@ input{
     color: #ffffff;
     font-size: 20px;
     font-weight: bold;
+  }
 }
-#btnConfirm{
-    text-decoration: none;
+@media (min-width: 450px) and (max-width: 500px) {
+  body {
+    margin: 40px 0;
+  }
+  #container {
+    flex-direction: column;
+    gap: 40px;
+  }
+  #part-one {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  #carte-two,
+  #carte-one {
+    width: 400px;
+    height: 244px;
+  }
+  #carte-one {
+    margin-top: 0;
+  }
+  #carte-two {
+    margin-top: 5px;
+    margin-left: 0;
+  }
+  #text-one {
+    padding-top: 140px;
+    padding-left: 30px;
+    letter-spacing: 5px;
+  }
+  #text-two {
+    padding-top: 0;
+    padding-left: 30px;
+    letter-spacing: 3px;
+  }
+  #text-three {
+    padding-left: 230px;
+    letter-spacing: 2px;
+  }
+  #lign-black {
+    width: 401px;
+    height: 20px;
+  }
+  #lign-gris {
+    width: 260px;
+    height: 20px;
+  }
+  #international {
+    font-size: 14px;
+  }
+  #cih-logo {
+    width: 70px;
+    height: 50px;
+  }
+  #part-two {
+    padding: 20px;
+  }
 }
-#btnConfirm button:hover{
-    background-color: #2d2d2d;
+@media (min-width: 501px) and (max-width: 1150px) {
+  body {
+    margin: 40px 0;
+  }
+  #container {
+    flex-direction: column;
+    gap: 40px;
+  }
+  #part-one {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  #carte-one {
+    margin-top: 0;
+  }
+  #carte-two {
+    margin-top: 5px;
+    margin-left: 0;
+    background-color: rgb(221, 221, 221);
+  }
 }
-@media (max-width:450px){
-    body{
-        margin: 40px 0;
-    }
-    #container{
-        flex-direction: column;
-        gap: 40px;
-    }
-    #part-one{
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-    }
-    #carte-two,#carte-one{
-        width: 300px;
-        height: 183px;
-    }
-    #carte-one{
-        margin-top: 0;
-    }
-    #carte-two{
-        margin-top: 5px;
-        margin-left: 0;
-    }
-    #text-one{
-        padding-top: 107px;
-        padding-left: 22px;
-        letter-spacing: 4px;
-        font-size: 18px;
-    }
-    #text-two{
-        padding-top: 4px;
-        padding-left: 22px;
-        letter-spacing: 2px;
-        font-size: 13px;
-    }
-    #text-three{
-        padding-top: 0;
-        padding-left: 170px;
-        letter-spacing: 2px;
-    }
-    #lign-black{
-        width: 301px;
-        height: 10px;
-    }
-    #lign-gris{
-        width: 180px;
-        height: 16px;
-        margin: 10px auto;
-    }
-    #international{
-        font-size: 10px;
-    }
-    #text{
-        text-align: center;
-        font-size: 10px ;
-    }
-    #cih-logo{
-        width: 60px;
-        height: 40px;
-    }
-    #part-two{
-        padding: 10px;
-    }
-    label{
-        font-size: 12px;
-    }
-    .smallInput input{
-        width: 30px;
-    }
-    .inputOne,.inputTwo{
-        width: 270px;
-    }
-    .lastInput{
-        width: 120px;
-    }
-    #btnConfirm button{
-        padding: 10px 100px;
-        display: block;
-        margin: auto;
-        border-radius: 5px;
-        border: none;
-        background-color: #040404;
-        color: #ffffff;
-        font-size: 20px;
-        font-weight: bold;
-    }
-}
-@media (min-width:450px) and (max-width:500px){
-    body{
-        margin: 40px 0;
-    }
-    #container{
-        flex-direction: column;
-        gap: 40px;
-    }
-    #part-one{
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-    }
-    #carte-two,#carte-one{
-        width: 400px;
-        height: 244px;
-    }
-    #carte-one{
-        margin-top: 0;
-    }
-    #carte-two{
-        margin-top: 5px;
-        margin-left: 0;
-    }
-    #text-one{
-        padding-top: 140px;
-        padding-left: 30px;
-        letter-spacing: 5px;
-    }
-    #text-two{
-        padding-top: 0;
-        padding-left: 30px;
-        letter-spacing: 3px;
-    }
-    #text-three{
-        padding-left: 230px;
-        letter-spacing: 2px;
-    }
-    #lign-black{
-        width: 401px;
-        height: 20px;
-    }
-    #lign-gris{
-        width: 260px;
-        height: 20px;
-    }
-    #international{
-        font-size: 14px;
-    }
-    #cih-logo{
-        width: 70px;
-        height: 50px;
-    }
-    #part-two{
-        padding: 20px;
-    }
-    
-}
-@media (min-width:501px) and (max-width:1150px){
-    body{
-        margin: 40px 0;
-    }
-    #container{
-        flex-direction: column;
-        gap: 40px;
-    }
-    #part-one{
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-    }
-    #carte-one{
-        margin-top: 0;
-    }
-    #carte-two{
-        margin-top: 5px;
-        margin-left: 0;
-        background-color: rgb(221, 221, 221);
-    }
-   
-}
-@media (min-width:1150px) and (max-width:1300px){
-    body{
-        margin: 40px 0;
-    }
-    #container{
-        flex-direction: column;
-        gap: 40px;
-    }
-    #part-one{
-        display: flex;
-        justify-content: space-evenly;
-        gap: 20px;
-    }
+@media (min-width: 1150px) and (max-width: 1300px) {
+  body {
+    margin: 40px 0;
+  }
+  #container {
+    flex-direction: column;
+    gap: 40px;
+  }
+  #part-one {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
 }
