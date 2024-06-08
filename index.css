@@ -197,11 +197,11 @@ input {
   label {
     font-size: 12px;
   }
-  .smallInput input {
+  #smallInput input {
     width: 30px;
   }
-  .inputOne,
-  .inputTwo {
+  #inputOne,
+  #inputTwo {
     width: 270px;
   }
   #lastInput {

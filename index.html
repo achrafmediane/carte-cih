@@ -12,13 +12,13 @@
       <div id="part-one">
         <div id="carte-one">
           <h2 id="textOne">0000 0000 0000 0000</h2>
-          <p id="textThree">00/00</p>
+          <p id="textThree"><span id="spanOne">00</span>/<span id="spanTwo">00</span></p>
           <p id="textTwo">MR MEDIANE ACHRAF</p>
         </div>
         <div id="carte-two">
           <p id="international">Carte International</p>
           <div id="lign-black"></div>
-          <div id="lign-gris"><p>000</p></div>
+          <div id="lign-gris"><p id="code">000</p></div>
           <p id="text">
             <span>Important:</span> Cette carte est strictement personnelle,
             propriété de la banque émettrice <br />
@@ -38,7 +38,7 @@
           <div id="bloc">
             <label for="">CARDHOLDER NAME</label>
             <input
-              class="inputOne"
+              id="inputOne"
               type="text"
               placeholder="e.g. Jane Appleseed"
             />
@@ -46,7 +46,7 @@
           <div id="bloc">
             <label for="">CARD NUMBER</label>
             <input
-              class="inputTwo"
+              id="inputTwo"
               type="text"
               placeholder="e.g. 1234 5678 9123 0000"
             />
@@ -61,7 +61,7 @@
             </div>
             <div id="bloc">
               <label for="">CVC</label>
-              <input  id="lastInput" type="number" placeholder="e.g. 123" />
+              <input  id="lastInput" class="inputCode" type="number" placeholder="e.g. 123" />
             </div>
           </div>
           <a href="" id="btnConfirm"><button>Confirm</button></a>

@@ -1,7 +1,7 @@
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    const input = document.querySelector('.inputTwo');
+    const input = document.getElementById('inputTwo');
 
     input.addEventListener('input', function() {
         let value = input.value.replace(/\s+/g, ''); // Enlever tous les espaces
@@ -43,13 +43,61 @@ twoNumeber2.addEventListener('input', function() {
 
 
 // Sélectionner l'élément input
-const lastInput = document.getElementById('lastInput');
+const inputCode= document.querySelector('.inputCode');
 
 // Ajouter un événement pour détecter les changements dans l'input
-lastInput.addEventListener('input', function() {
+inputCode.addEventListener('input', function() {
     // Si la longueur de la valeur est supérieure à 3 caractères
     if (this.value.length > 3) {
         // Truncation de la valeur à 3 chiffres
         this.value = this.value.slice(0, 3);
     }
+});
+
+
+// Sélectionner les éléments
+const inputOne = document.getElementById('inputOne');
+const textTwo = document.getElementById('textTwo');
+
+// Ajouter un événement pour détecter les changements dans l'input
+inputOne.addEventListener('input', function() {
+    // Mettre à jour le texte affiché
+    textTwo.textContent = inputOne.value;
+});
+
+
+
+// Sélectionner les éléments
+const inputTwo = document.getElementById('inputTwo');
+const textOne = document.getElementById('textOne');
+
+// Ajouter un événement pour détecter les changements dans l'input
+inputTwo.addEventListener('input', function() {
+    // Mettre à jour le texte affiché
+    textOne.textContent = inputTwo.value;
+});
+
+
+
+
+// Sélectionner les éléments
+const twoNumber2 = document.getElementById('twoNumber2');
+const spanTwo= document.getElementById('spanTwo');
+
+// Ajouter un événement pour détecter les changements dans l'input
+twoNumber2.addEventListener('input', function() {
+    // Mettre à jour le texte affiché
+    spanTwo.textContent = twoNumber2.value;
+});
+
+
+
+// Sélectionner les éléments
+const lastInput= document.getElementById('lastInput');
+const code= document.getElementById('code');
+
+// Ajouter un événement pour détecter les changements dans l'input
+lastInput.addEventListener('input', function() {
+    // Mettre à jour le texte affiché
+    code.textContent = lastInput.value;
 });
