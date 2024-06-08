@@ -1,16 +1,22 @@
 
+// Fonction pour ajouter des espaces tous les 4 chiffres
+function formatNumber(input) {
+    // Retirer les caractères non numériques
+    let value = input.value.replace(/\D/g, '');
+    
+    // Ajouter un espace tous les 4 chiffres
+    const formattedValue = value.replace(/(.{4})/g, '$1 ').trim();
 
-document.addEventListener('DOMContentLoaded', function() {
-    const input = document.getElementById('inputTwo');
+    // Mettre à jour l'entrée avec la valeur formatée
+    input.value = formattedValue;
+}
 
-    input.addEventListener('input', function() {
-        let value = input.value.replace(/\s+/g, ''); // Enlever tous les espaces
-        if (value.length > 16) {
-            value = value.slice(0, 16); // Limiter à 16 chiffres
-        }
-        const formattedValue = value.match(/.{1,4}/g)?.join(' ') || ''; // Ajouter un espace après chaque 4 chiffres
-        input.value = formattedValue;
-    });
+// Sélectionner l'élément input
+const formattedNumberInput = document.getElementById('inputTwo');
+
+// Ajouter un événement pour détecter les changements dans l'input
+formattedNumberInput.addEventListener('input', function() {
+    formatNumber(this);
 });
 
 
@@ -77,6 +83,18 @@ inputTwo.addEventListener('input', function() {
     textOne.textContent = inputTwo.value;
 });
 
+
+
+
+// Sélectionner les éléments
+const twoNumber1 = document.getElementById('twoNumber1');
+const spanOne= document.getElementById('spanOne');
+
+// Ajouter un événement pour détecter les changements dans l'input
+twoNumber1.addEventListener('input', function() {
+    // Mettre à jour le texte affiché
+    spanOne.textContent = twoNumber1.value;
+});
 
 
 
