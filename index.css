@@ -3,7 +3,6 @@
     margin: 0;
 }
 body{
-    overflow: hidden;
     background: linear-gradient(#2d2d2d,#ffffff);
     background-repeat: no-repeat;
 }
@@ -55,23 +54,22 @@ body{
 }
 #text-one,#text-two,#text-three{
     color: rgb(135, 115, 0);
-    font-weight: bold;
-    
+    font-weight: bold;    
 }
 #text-one{
-    top: 175px;
-    left: 35px;
+    padding-top: 170px;
+    padding-left: 35px;
     letter-spacing: 7px;
     font-size: 27px;
 }
 #text-two{
-    top: 211px;
-    left: 35px;
+    padding-top: 10px;
+    padding-left: 35px;
     letter-spacing: 4px;
 }
 #text-three{
-    top: 170px;
-    left: 250px;
+    padding-top:  10px;
+    padding-left: 245px;
     letter-spacing: 4px;
 }
 #text{
@@ -129,7 +127,6 @@ input{
 }
 @media (max-width:450px){
     body{
-        overflow-y: auto;
         margin: 40px 0;
     }
     #container{
@@ -153,20 +150,20 @@ input{
         margin-left: 0;
     }
     #text-one{
-        top: 110px;
-        left: 25px;
+        padding-top: 107px;
+        padding-left: 22px;
         letter-spacing: 4px;
         font-size: 18px;
     }
     #text-two{
-        top: 128px;
-        left: 25px;
+        padding-top: 4px;
+        padding-left: 22px;
         letter-spacing: 2px;
         font-size: 13px;
     }
     #text-three{
-        top: 95px;
-        left: 170px;
+        padding-top: 0;
+        padding-left: 170px;
         letter-spacing: 2px;
     }
     #lign-black{
@@ -186,9 +183,8 @@ input{
         font-size: 10px ;
     }
     #cih-logo{
-        position: relative;
-        bottom: 20px;
-        height: 60px;
+        width: 60px;
+        height: 40px;
     }
     #part-two{
         padding: 10px;
@@ -219,7 +215,6 @@ input{
 }
 @media (min-width:450px) and (max-width:500px){
     body{
-        overflow-y: auto;
         margin: 40px 0;
     }
     #container{
@@ -243,18 +238,17 @@ input{
         margin-left: 0;
     }
     #text-one{
-        top: 140px;
-        left: 35px;
+        padding-top: 140px;
+        padding-left: 30px;
         letter-spacing: 5px;
     }
     #text-two{
-        top: 170px;
-        left: 35px;
-        letter-spacing: 2px;
+        padding-top: 0;
+        padding-left: 30px;
+        letter-spacing: 3px;
     }
     #text-three{
-        top: 130px;
-        left: 220px;
+        padding-left: 230px;
         letter-spacing: 2px;
     }
     #lign-black{
@@ -269,8 +263,8 @@ input{
         font-size: 14px;
     }
     #cih-logo{
-        position: relative;
-        bottom: 10px;
+        width: 70px;
+        height: 50px;
     }
     #part-two{
         padding: 20px;
@@ -279,7 +273,6 @@ input{
 }
 @media (min-width:501px) and (max-width:1150px){
     body{
-        overflow-y: auto;
         margin: 40px 0;
     }
     #container{
@@ -303,7 +296,6 @@ input{
 }
 @media (min-width:1150px) and (max-width:1300px){
     body{
-        overflow-y: auto;
         margin: 40px 0;
     }
     #container{
