@@ -11,9 +11,9 @@
     <div id="container">
       <div id="part-one">
         <div id="carte-one">
-          <h2 id="text-one">0000 0000 0000 0000</h2>
-          <p id="text-three">00/00</p>
-          <p id="text-two">MR MEDIANE ACHRAF</p>
+          <h2 id="textOne">0000 0000 0000 0000</h2>
+          <p id="textThree">00/00</p>
+          <p id="textTwo">MR MEDIANE ACHRAF</p>
         </div>
         <div id="carte-two">
           <p id="international">Carte International</p>
@@ -47,7 +47,7 @@
             <label for="">CARD NUMBER</label>
             <input
               class="inputTwo"
-              type="number"
+              type="text"
               placeholder="e.g. 1234 5678 9123 0000"
             />
           </div>
@@ -55,18 +55,19 @@
             <div class="smallInput" id="bloc">
               <label for="">CARDHOLDER NAME</label>
               <div class="flex">
-                <input type="number" placeholder="MM" min="01" max="12" />
-                <input type="number" placeholder="YY" min="10" max="40" />
+                <input id="twoNumber1" type="number" placeholder="MM" min="01" max="12" />
+                <input id="twoNumber2" type="number" placeholder="YY" min="10" max="40" />
               </div>
             </div>
             <div id="bloc">
               <label for="">CVC</label>
-              <input class="lastInput" type="number" placeholder="e.g. 123" />
+              <input  id="lastInput" type="number" placeholder="e.g. 123" />
             </div>
           </div>
           <a href="" id="btnConfirm"><button>Confirm</button></a>
         </form>
       </div>
     </div>
+    <script src="./index.js"></script>
   </body>
 </html>

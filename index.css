@@ -53,24 +53,25 @@ body {
   font-weight: bold;
   border-radius: 5px;
 }
-#text-one,
-#text-two,
-#text-three {
+#textOne,
+#textTwo,
+#textThree {
   color: rgb(135, 115, 0);
   font-weight: bold;
+
 }
-#text-one {
+#textOne {
   padding-top: 170px;
   padding-left: 35px;
   letter-spacing: 7px;
   font-size: 27px;
 }
-#text-two {
+#textTwo {
   padding-top: 10px;
   padding-left: 35px;
   letter-spacing: 4px;
 }
-#text-three {
+#textThree {
   padding-top: 10px;
   padding-left: 245px;
   letter-spacing: 4px;
@@ -153,19 +154,19 @@ input {
     margin-top: 5px;
     margin-left: 0;
   }
-  #text-one {
+  #textOne {
     padding-top: 107px;
     padding-left: 22px;
     letter-spacing: 4px;
     font-size: 18px;
   }
-  #text-two {
+  #textTwo {
     padding-top: 4px;
     padding-left: 22px;
     letter-spacing: 2px;
     font-size: 13px;
   }
-  #text-three {
+  #textThree {
     padding-top: 0;
     padding-left: 170px;
     letter-spacing: 2px;
@@ -203,7 +204,7 @@ input {
   .inputTwo {
     width: 270px;
   }
-  .lastInput {
+  #lastInput {
     width: 120px;
   }
   #btnConfirm button {
@@ -243,17 +244,17 @@ input {
     margin-top: 5px;
     margin-left: 0;
   }
-  #text-one {
+  #textOne {
     padding-top: 140px;
     padding-left: 30px;
     letter-spacing: 5px;
   }
-  #text-two {
+  #textTwo {
     padding-top: 0;
     padding-left: 30px;
     letter-spacing: 3px;
   }
-  #text-three {
+  #textThree {
     padding-left: 230px;
     letter-spacing: 2px;
   }
